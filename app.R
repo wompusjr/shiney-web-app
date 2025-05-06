@@ -55,19 +55,19 @@ server <- function(input, output, session) {
     stop("Data could not be loaded or is empty.")
   }
 
-  #creating variables
+  # Reactive value to track model history
   model_history <- reactiveVal(data.frame(
     model_id = character(),
     predictors = character(),
     AICc = numeric(),
     stringsAsFactors = FALSE
   ))
-
+  # Reactive value to store the locked model
   locked_model <- reactiveVal(NULL)
-
+  # Run the model when the "Run Model" button is pressed
   observeEvent(input$run_model, {
     req(input$selected_predictors)
-
+    # Create the model formula based on selected predictors
     formula_text <- paste("CLOSED ~", paste(input$selected_predictors, collapse = " + "))
     model <- glm(as.formula(formula_text), data = clean_d, family = "binomial")
 
@@ -80,23 +80,23 @@ server <- function(input, output, session) {
     )
     model_history(rbind(history, new_entry))
   })
-
+  # Reactive expression to fit the model based on selected predictors
   model_result <- reactive({
     req(input$selected_predictors)
     glm(as.formula(paste("CLOSED ~", paste(input$selected_predictors, collapse = " + "))),
         data = clean_d, family = "binomial")
   })
-
+  # Display the model summary output
   output$model_summary <- renderPrint({
     req(model_result())
     summary(model_result())
   })
-
+  # Display the AIC value
   output$aic_value <- renderText({
     req(model_result())
     paste("AIC:", round(AIC(model_result()), 2))
   })
-
+  # Create a coefficient plot
   output$coef_plot <- renderPlot({
     req(model_result())
     coef_df <- broom::tidy(model_result())
@@ -112,14 +112,14 @@ server <- function(input, output, session) {
         y = "Log-Odds Estimate"
       )
   })
-
+  # Lock the model with the lowest AICc value
   observeEvent(input$lock_best_model, {
     history <- model_history()
     req(nrow(history) > 0)
     best_model <- history[which.min(history$AICc), ]
     locked_model(best_model)
   })
-
+  # Reset the model history, but keep the locked model if set
   observeEvent(input$reset_models, {
     locked <- locked_model()
     if (!is.null(locked)) {
@@ -133,15 +133,15 @@ server <- function(input, output, session) {
       ))
     }
   })
-
+  # Plot changes in AICc (Delta AICc) across models
   output$delta_aicc_plot <- renderPlot({
     history <- model_history()
     req(nrow(history) > 0)
-
+    # Calculate Delta AICc (difference from the best model's AICc)
     min_aicc <- min(history$AICc)
     history$DeltaAICc <- history$AICc - min_aicc
     history$is_locked <- FALSE
-
+    # Mark the locked model
     locked <- locked_model()
     if (!is.null(locked)) {
       lock_id <- locked$model_id
@@ -149,7 +149,7 @@ server <- function(input, output, session) {
         history$is_locked[history$model_id == lock_id] <- TRUE
       }
     }
-
+    # Create a plot of Delta AICc
     ggplot(history, aes(x = seq_along(model_id), y = DeltaAICc, color = is_locked)) +
       geom_line(linewidth = 1) +
       geom_point(size = 3) +
