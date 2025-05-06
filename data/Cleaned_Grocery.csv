@@ -1,0 +1,81 @@
+"STORENAME","ZIPCODE","WARD","CLOSED","BRAND","PREDATE"
+"Target",20012,"Ward 4",FALSE,TRUE,0
+"International Progresso Market",20012,"Ward 4",FALSE,FALSE,0
+"Jocelyn’s Market",20012,"Ward 4",FALSE,FALSE,0
+"Magruder's",20015,"Ward 3",FALSE,FALSE,1
+"Safeway",20015,"Ward 3",FALSE,TRUE,1
+"Walmart Supercenter",20011,"Ward 4",FALSE,TRUE,1
+"Walmart Supercenter",20011,"Ward 4",FALSE,TRUE,1
+"Tropimart International Foods",20011,"Ward 4",TRUE,FALSE,0
+"Rodman’s",20016,"Ward 3",FALSE,FALSE,0
+"Avenue Supermarket",20011,"Ward 4",FALSE,FALSE,0
+"Whole Foods Market",20016,"Ward 3",FALSE,TRUE,1
+"Target",20016,"Ward 3",FALSE,TRUE,0
+"Wagshal’s Market",20016,"Ward 3",FALSE,FALSE,0
+"Giant",20008,"Ward 3",FALSE,FALSE,1
+"Yes! Organic",20011,"Ward 4",FALSE,FALSE,1
+"Morazan Grocery Store",20011,"Ward 4",FALSE,FALSE,0
+"Yes! Organic",20017,"Ward 5",FALSE,FALSE,1
+"Target",20008,"Ward 3",FALSE,TRUE,0
+"Streets Market",20008,"Ward 3",FALSE,FALSE,0
+"Yes! Organic",20008,"Ward 3",FALSE,FALSE,1
+"Giant",20016,"Ward 3",FALSE,FALSE,1
+"Panam Grocery",20010,"Ward 1",FALSE,FALSE,0
+"Giant",20010,"Ward 1",FALSE,FALSE,1
+"El Progreso Market",20010,"Ward 1",FALSE,FALSE,0
+"Target",20010,"Ward 1",FALSE,TRUE,1
+"Safeway",20009,"Ward 1",FALSE,TRUE,1
+"Yes! Organic",20009,"Ward 1",FALSE,FALSE,1
+"Whole Foods Market",20007,"Ward 3",FALSE,TRUE,1
+"Costco Wholesale",20018,"Ward 5",FALSE,TRUE,1
+"Streets Market",20009,"Ward 1",FALSE,FALSE,1
+"Streets Market",20009,"Ward 1",FALSE,FALSE,0
+"Whole Foods Market",20001,"Ward 1",FALSE,TRUE,0
+"Yes! Organic",20009,"Ward 1",TRUE,FALSE,1
+"Trader Joe's",20007,"Ward 3",FALSE,TRUE,0
+"Target",20002,"Ward 5",FALSE,TRUE,0
+"Safeway",20007,"Ward 2",FALSE,TRUE,1
+"Trader Joe's",20009,"Ward 2",FALSE,TRUE,1
+"Mom's Organic Market",20002,"Ward 5",FALSE,FALSE,1
+"Safeway",20009,"Ward 2",FALSE,TRUE,1
+"Whole Foods Market",20005,"Ward 2",FALSE,TRUE,1
+"Metro Supermarket",20037,"Ward 2",FALSE,FALSE,0
+"Giant",20001,"Ward 2",FALSE,FALSE,1
+"Trader Joe's",20002,"Ward 5",FALSE,TRUE,0
+"Streets Market",20037,"Ward 2",FALSE,FALSE,0
+"Harris Teeter",20002,"Ward 6",FALSE,FALSE,1
+"Streets Market",20002,"Ward 6",FALSE,FALSE,0
+"Streets Market",20005,"Ward 2",FALSE,FALSE,0
+"Trader Joe's",20037,"Ward 2",FALSE,TRUE,1
+"Aldi",20002,"Ward 5",FALSE,TRUE,1
+"Whole Foods Market",20037,"Ward 2",FALSE,TRUE,1
+"Safeway",20002,"Ward 5",FALSE,TRUE,1
+"Giant",20002,"Ward 6",FALSE,FALSE,1
+"Walmart Supercenter",20001,"Ward 6",TRUE,TRUE,1
+"Whole Foods Market",20002,"Ward 6",FALSE,TRUE,1
+"Market at Columbia Plaza",20037,"Ward 2",FALSE,FALSE,0
+"Trader Joe's",20003,"Ward 6",FALSE,TRUE,1
+"Safeway",20003,"Ward 6",FALSE,TRUE,1
+"Yes! Organic",20003,"Ward 6",FALSE,FALSE,1
+"Whole Foods Market",20003,"Ward 8",FALSE,TRUE,0
+"Safeway",20024,"Ward 6",FALSE,TRUE,1
+"Harris Teeter",20003,"Ward 8",FALSE,FALSE,1
+"Safeway",20020,"Ward 7",FALSE,TRUE,1
+"Giant",20032,"Ward 8",FALSE,FALSE,1
+"Safeway",20012,"Ward 4",FALSE,TRUE,1
+"Safeway",20011,"Ward 4",FALSE,TRUE,1
+"BestWorld Supermarket",20010,"Ward 1",FALSE,FALSE,1
+"Harris Teeter",20009,"Ward 1",FALSE,FALSE,1
+"Giant",20018,"Ward 5",FALSE,FALSE,1
+"Dawson's Market",20009,"Ward 2",TRUE,FALSE,0
+"Capitol Super Market",20001,"Ward 2",FALSE,FALSE,1
+"Safeway",20001,"Ward 6",FALSE,TRUE,1
+"Safeway",20019,"Ward 7",FALSE,TRUE,1
+"Wegmans",20016,"Ward 3",FALSE,TRUE,0
+"Lidl",20020,"Ward 7",FALSE,FALSE,0
+"Good Food Markets",20032,"Ward 8",TRUE,FALSE,0
+"AmazonFresh",20009,"Ward 2",TRUE,TRUE,0
+"Union Kitchen Grocery",20001,"Ward 2",FALSE,FALSE,1
+"Union Kitchen Grocery",20005,"Ward 1",TRUE,FALSE,0
+"Union Kitchen Grocery",20002,"Ward 5",FALSE,FALSE,0
+"Union Kitchen Grocery",20002,"Ward 6",FALSE,FALSE,1
